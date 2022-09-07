@@ -22,6 +22,7 @@
                 // Code de vérification 
                 ?>
             </form>
+            <p><a href="inscription.php">S'inscrire</p>
         </div>
     </body>
 </html>
