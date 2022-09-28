@@ -12,7 +12,7 @@ use utils\SessionHelpers;
         <div id="container">
             <!-- zone de connexion -->
             
-            <form action="/" method="POST">
+            <form action="/connexion" method="POST">
                 <?php
                 if (SessionHelpers::isLogin()) {
                 ?>

@@ -15,7 +15,7 @@ class LoginController extends Web
 
         $erreur = "";
         if (!empty($login) && !empty($password)) {
-            $equipeM = new \models\AuthModel();
+            $equipeM = new \models\LoginModel();
 
             $lequipe = $equipeM->login($login, $password);
             if ($lequipe != null) {
