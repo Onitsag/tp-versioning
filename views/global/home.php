@@ -8,7 +8,15 @@
         <div id="container">
             <!-- zone de connexion -->
             
-            <form action="verification.php" method="POST">
+            <form action="/" method="POST">
+                <?php
+                if (SessionHelpers::isLogin()) {
+                ?>
+                    <p>Vous êtes connecté</p>
+                <?php
+                }
+                ?>
+                    
                 <h1>Connexion</h1>
                 
                 <label><b>Nom d'utilisateur</b></label>

@@ -11,4 +11,9 @@ class SampleWeb extends Web
     {
         Template::render("views/global/home.php", array("date" => date("d-m-Y à H:i")));
     }
+
+    function inscription()
+    {
+        Template::render("views/global/inscription.php");
+    }
 }
