@@ -1,3 +1,7 @@
+<?php
+use utils\SessionHelpers;
+?>
+
 <html>
     <head>
        <meta charset="utf-8">
@@ -13,6 +17,10 @@
                 if (SessionHelpers::isLogin()) {
                 ?>
                     <p>Vous êtes connecté</p>
+                <?php
+                } else {
+                ?>
+                    <p>Vous n'êtes pas connecté</p>
                 <?php
                 }
                 ?>
